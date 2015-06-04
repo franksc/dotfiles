@@ -1,0 +1,19 @@
+[user]
+	name = REPLACE_ME
+	email = REPLACE_ME
+[credential]
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+	editor = vim
+[color]
+	ui = true
+	branch      = auto
+	diff        = auto
+	interactive = auto
+	status      = auto
+[credential]
+	helper = osxkeychain
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
