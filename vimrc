@@ -3,6 +3,9 @@ set hidden
 set backspace=indent,eol,start
 set pastetoggle=<F2>
 
+" Pathogen
+execute pathogen#infect()
+
 syntax on					" syntax highlighting
 filetype on					" detect the filetype
 filetype plugin indent on	" load filetype plugins
@@ -11,7 +14,7 @@ set background=dark
 set t_Co=256
 set mouse=a
 set visualbell
-colorscheme molokai
+colorscheme jellybeans
 
 " Disable backup. No swap files.
 set nobackup
@@ -78,3 +81,8 @@ set guifont=Meslo\ LG\ L\ DZ:h14
 set linespace=5
 set guicursor+=a:blinkon0
 set clipboard=unnamed   " copy/paste from OS X clipboard
+
+" Airline
+set laststatus=2
+" Nerdtree
+map <C-n> :NERDTreeToggle<CR>
