@@ -73,6 +73,7 @@ set formatoptions=tcq
 
 noremap j gj
 noremap k gk
+noremap \ :set hlsearch! hlsearch?<CR>
 
 au BufNewFile,BufRead,BufEnter *.markdown,*.mdown,*.md,*.mkd,*.mkdn,README.md  setf markdown
 
